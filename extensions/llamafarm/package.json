@@ -1,0 +1,14 @@
+{
+  "name": "@moltbot/llamafarm",
+  "version": "2026.1.30",
+  "type": "module",
+  "description": "LlamaFarm integration for Moltbot - local LLM backend via LlamaFarm server",
+  "moltbot": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "devDependencies": {
+    "moltbot": "workspace:*"
+  }
+}

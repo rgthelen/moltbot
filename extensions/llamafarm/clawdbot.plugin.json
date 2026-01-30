@@ -1,0 +1,31 @@
+{
+  "id": "llamafarm",
+  "name": "LlamaFarm",
+  "description": "Local LLM backend via LlamaFarm server with OpenAI-compatible chat API",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "serverUrl": {
+        "type": "string",
+        "description": "LlamaFarm server URL (default: http://localhost:8000)"
+      },
+      "namespace": {
+        "type": "string",
+        "description": "LlamaFarm project namespace"
+      },
+      "project": {
+        "type": "string",
+        "description": "LlamaFarm project name"
+      },
+      "modelName": {
+        "type": "string",
+        "description": "Model name to use (default: qwen3-8b)"
+      },
+      "autoBootstrap": {
+        "type": "boolean",
+        "description": "Automatically bootstrap LlamaFarm project on startup (default: true)"
+      }
+    }
+  }
+}
